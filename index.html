@@ -129,12 +129,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">2</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -193,13 +193,13 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -249,7 +249,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/07/07/%E5%BE%AE%E8%BD%AF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8D%97-2020%E5%B9%B45%E6%9C%88/" class="post-title-link" itemprop="url">微软更新指南 - 2020年5月</a>
+            <a href="/2020/07/07/%E5%BE%AE%E8%BD%AF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8D%97-2020%E5%B9%B45%E6%9C%88/" class="post-title-link" itemprop="url">微软更新指南 - 2020年5月[In progress]</a>
         </h2>
 
         <div class="post-meta">
@@ -260,6 +260,15 @@
               <span class="post-meta-item-text">Posted on</span>
 
               <time title="Created: 2020-07-07 19:35:03" itemprop="dateCreated datePublished" datetime="2020-07-07T19:35:03+08:00">2020-07-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%BE%AE%E8%BD%AF%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8D%97/" itemprop="url" rel="index"><span itemprop="name">微软更新指南</span></a>
+                </span>
             </span>
 
           
@@ -273,7 +282,51 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h1 id="2020年5月更新"><a href="#2020年5月更新" class="headerlink" title="2020年5月更新"></a>2020年5月更新</h1><p>文章翻译自<a href="https://learn-sunrise-co.azurewebsites.net/Compass/Compass_May2020.html#finance-and-operations-dynamics_logo" target="_blank" rel="noopener">May 2020 release</a></p>
+<p>对于微软来说，5月又是一个忙碌的月份。F&amp;O有许多值得注意的发布，电子商务部分也有许多重要的更新，Power Platform增加了好几个易用性方面的改善。请特别注意以下内容的前几条，他们对正在进行的项目的健康状况至关重要。</p>
+<blockquote>
+<p>May was another busy month for Microsoft. F&amp;O had some notable releases, Commerce had important numerous updates and Power Platform added several usability improvements. Pay special attention to the first few entries below as they are critical to ongoing project health.</p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/4447207-05f0aa4cdc0aba62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="D365 Finance and Operations "></p>
+<h2 id="Finance-and-Operations"><a href="#Finance-and-Operations" class="headerlink" title="Finance and Operations"></a>Finance and Operations</h2><hr>
+<h3 id="基础更新"><a href="#基础更新" class="headerlink" title="基础更新"></a>基础更新</h3><p>随着微软引导客户使用更自助式的模式，环境管理的几个根本性变化也在进行中，<strong>技术架构师(TA)应该密切关注这一块儿。</strong></p>
+<blockquote>
+<p>Several fundamental changes to environment management are underway as Microsoft guides customers to a more self-service model. Technical Architects should pay close attention.</p>
+</blockquote>
+<h5 id="删除了对2-5层的SAT环境的远程桌面访问"><a href="#删除了对2-5层的SAT环境的远程桌面访问" class="headerlink" title="删除了对2 - 5层的SAT环境的远程桌面访问"></a><a href="https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/removing-remote-desktop-access-tier-2-5-standard-acceptance-test-or-sandbox-environments" target="_blank" rel="noopener">删除了对2 - 5层的SAT环境的远程桌面访问</a></h5><hr>
+<p>所有新实例都不能访问第2层VM。<strong>现有实例将在9月份失去访问权</strong>。LCS是调查事件日志、SQL问题和性能问题的主要来源。</p>
+<blockquote>
+<p>Access to Tier 2+ VM’s is going away for all new instances. Existing instances will lose access in September. LCS is the primary source to investigate event logs, SQL issues, and performance problems.</p>
+</blockquote>
+<h5 id="支持为自助服务环境应用包的APIs"><a href="#支持为自助服务环境应用包的APIs" class="headerlink" title="支持为自助服务环境应用包的APIs"></a><a href="https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/apis-support-applying-packages-self-service-environments" target="_blank" rel="noopener">支持为自助服务环境应用包的APIs</a></h5><hr>
+<p>向自助服务环境的转变将取消使用Azure DevOps任务进行夜间构建过程和CI/CD管道的能力。对于1-5层沙箱VM的包应用程序将只存在于LCS中。</p>
+<blockquote>
+<p>The move to self-service environments will remove the ability to use Azure DevOps tasks for nightly build processes and CI/CD pipelines. Package application will live exclusively in LCS for Tier 1-5 sandbox VM’s. </p>
+</blockquote>
+<p>通过学习<strong><a href="https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/restful-apis-database-export" target="_blank" rel="noopener">RESTful APIs for database export</a></strong>为这个变化做好准备。尽管变化很大，但是这一变化也增加了自动将数据库从PROD回复到SAT的可能性。</p>
+<blockquote>
+<p>Get ready for the change by learning about <strong><a href="https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/restful-apis-database-export" target="_blank" rel="noopener">RESTful APIs for database export</a></strong>. Although the change is significant it also adds a quality of life feature via the ability to automate database restore from PROD to SAT.</p>
+</blockquote>
+<h5 id="LCS问题搜索改进"><a href="#LCS问题搜索改进" class="headerlink" title="LCS问题搜索改进"></a><a href="https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecyle-services-issue-search-improvements" target="_blank" rel="noopener">LCS问题搜索改进</a></h5><hr>
+<p>希望你们不需要经常搜索基础的产品问题😉，但是你可能已经注意到，微软改进了流程。LCS现在提供附加的信息：</p>
+<blockquote>
+<p>Hopefully, you all aren’t having to research base product issues too often 😉, but you may have noticed that MSFT improved the process. LCS now provides additional information for:</p>
+</blockquote>
+<ul>
+<li>影响版本的发布</li>
+<li>发布类型指示每个发布版本如何可用，可以通过质量更新或服务更新</li>
+<li>每个计划发布的状态</li>
+<li>每个计划发布的可用性<blockquote>
+<ul>
+<li>Release of the impacted versions</li>
+<li>Release type indicating how each release will be made available, either via quality update or service update</li>
+<li>Status of each planned release</li>
+<li>Availability of each planned release</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h3 id="供应链管理"><a href="#供应链管理" class="headerlink" title="供应链管理"></a>供应链管理</h3>
       
     </div>
 
@@ -306,7 +359,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/07/03/%E6%B5%85%E8%B0%88%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-title-link" itemprop="url">浅谈项目管理</a>
+            <a href="/2020/07/03/%E6%B5%85%E8%B0%88%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-title-link" itemprop="url">浅谈项目管理[In progress]</a>
         </h2>
 
         <div class="post-meta">
@@ -317,6 +370,15 @@
               <span class="post-meta-item-text">Posted on</span>
 
               <time title="Created: 2020-07-03 18:55:27" itemprop="dateCreated datePublished" datetime="2020-07-03T18:55:27+08:00">2020-07-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">项目管理</span></a>
+                </span>
             </span>
 
           
